@@ -50,6 +50,8 @@ def heap_sort(arr):
 if __name__ == "__main__":
     # Demonstrate the Heap Sort algorithm
     data = [64, 25, 12, 22, 11, 90, 34, 7, 100]
-    print(f"Unsorted array: {data}")
+    data_2 = [3, 6, 2, 5]
+    print(f"Unsorted array: {data}, {data_2}")
     heap_sort(data)
-    print(f"Sorted array: {data}")
+    heap_sort(data_2)
+    print(f"Sorted array: {data}, {data_2}")

@@ -19,6 +19,7 @@ def selection_sort(arr):
 if __name__ == "__main__":
     # Demonstrate the Selection Sort algorithm
     data = [64, 25, 12, 22, 11]
+    data2 = [86, 12, 43, 55, 9]
     print(f"Unsorted array: {data}")
     selection_sort(data)
     print(f"Sorted array: {data}")

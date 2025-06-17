@@ -47,7 +47,7 @@ def heap_sort(arr):
 
 if __name__ == "__main__":
     # Demonstrate the Heap Sort algorithm
-    data = [64, 25, 12, 22, 11, 90, 34, 7, 100]
+    data = [64, 25, 12, 22, 11, 90, 34, 7, 100, 1200, 63, 12, 0, 0, 1, 0]
     print(f"Unsorted array: {data}")
     heap_sort(data)
     print(f"Sorted array: {data}")

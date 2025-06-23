@@ -9,7 +9,7 @@ def bubble_sort(arr):
 
 if __name__ == "__main__":
     # MODIFICATION_POINT_FOR_CONFLICT_EXERCISE
-    data1 = [64, 34, 25, 12, 22, 11, 90]
+    data1 = [23, 45, 12, 67, 34, 89, 1, 5]
     print("Original array:", data1)
     sorted_data = bubble_sort(data1)
     print("Sorted array:", sorted_data)

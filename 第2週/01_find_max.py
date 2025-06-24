@@ -20,8 +20,8 @@ def find_max_from_input():
     # リストの残りの要素を一つずつ確認
     for num in numbers:
         # もし現在の要素がmax_valueよりも大きければ更新
-        if num < max_value:
-            num = max_value
+        if num > max_value:
+             max_value = num
             
     return max_value
 

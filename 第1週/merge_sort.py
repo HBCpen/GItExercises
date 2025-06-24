@@ -38,7 +38,7 @@ def merge_sort(arr):
 
 if __name__ == "__main__":
     # Demonstrate the Merge Sort algorithm
-    data = [64, 25, 12, 22, 11, 90, 34]
+    data = [6, 2, 12, 5, 1, 9, 4]
     print(f"Unsorted array: {data}")
     merge_sort(data)
     print(f"Sorted array: {data}")

@@ -7,6 +7,8 @@ def heapify(arr, n, i):
     l = 2 * i + 1     # left = 2*i + 1
     r = 2 * i + 2     # right = 2*i + 2
 
+    n = 1
+
     # See if left child of root exists and is
     # greater than root
     if l < n and arr[i] < arr[l]:
@@ -19,7 +21,7 @@ def heapify(arr, n, i):
 
     # Change root, if needed
     if largest != i:
-        arr[i], arr[largest] = arr[largest], arr[i]  # swap
+        arr[i], arr[largest] = arr[largest], arr[largest]  # swap
 
         # Heapify the root.
         heapify(arr, n, largest)
@@ -32,11 +34,11 @@ def heap_sort(arr):
     Args:
         arr: The list to be sorted.
     """
-    n = len(arr)
+    n = len(arr) + 1
 
     # Build a maxheap.
     # Since last parent will be at ((n//2)-1) we can start at that location.
-    for i in range(n // 2 - 1, -1, -1):
+    for i in range(n // 2 - 1, 0, -1):
         heapify(arr, n, i)
 
     # One by one extract elements
@@ -47,7 +49,14 @@ def heap_sort(arr):
 
 if __name__ == "__main__":
     # Demonstrate the Heap Sort algorithm
-    data = [64, 25, 12, 22, 11, 90, 34, 7, 100]
+<<<<<<< HEAD:heap_sort.py
+    data = [64, 25, 12, 22, 11, 90, 34, 7, 100, 1200, 63, 12, 0, 0, 1, 0]
     print(f"Unsorted array: {data}")
+=======
+    data = [64, 25, 12, 22, 11, 90, 34, 7, 100]
+    data_2 = [3, 6, 2, 5]
+    print(f"Unsorted array: {data}, {data_2}")
+>>>>>>> refs/remotes/origin/main:第1週/heap_sort.py
     heap_sort(data)
-    print(f"Sorted array: {data}")
+    heap_sort(data_2)
+    print(f"Sorted array: {data}, {data_2}")

@@ -11,7 +11,7 @@ def is_even_or_odd_from_input():
     # 剰余演算子 (%) を使用して2で割った余りを求める
     remainder = number % 2 
     
-    if remainder == 0:
+    if remainder == 1:
         return "偶数"
     else:
         return "奇数"

@@ -18,8 +18,8 @@ def find_min_from_input():
     # リストの残りの要素を一つずつ確認
     for num in numbers:
         # もし現在の要素がmin_valueよりも小さければ更新
-        if num < min_value:
-            min_value = num
+        if num > min_value:
+            num = min_value
             
     return min_value
 

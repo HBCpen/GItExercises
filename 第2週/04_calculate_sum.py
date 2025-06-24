@@ -11,7 +11,7 @@ def calculate_sum_from_input():
     total = 0 # 合計値を格納する変数を0で初期化
 
     for num in numbers:
-        total += num # または total = total + num と書けます
+        total = num
             
     return total
 

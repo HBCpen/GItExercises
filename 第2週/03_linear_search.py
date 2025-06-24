@@ -13,7 +13,7 @@ def linear_search_from_input():
     # リストの要素をインデックスと値の両方で確認
     for i in range(len(items)): # i はインデックス (0, 1, 2...)
         if items[i] == target: # 現在の要素が探す値と一致するか？
-            return i # 一致したらそのインデックスを返す
+            return i + 1 # 一致したらそのインデックスを返す
     
     return -1 # リストの最後まで見つからなかった場合
 

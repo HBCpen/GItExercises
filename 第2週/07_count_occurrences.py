@@ -15,8 +15,8 @@ def count_occurrences_from_input():
     for item in items:
         if item == target_item: # 現在の要素がターゲットと一致するか？
             count += 1 # 一致したらカウントを増やす
-            
-    return count
+
+    return item
 
 # プログラム実行部分
 print("--- 要素の出現回数を数えるアルゴリズム ---")

@@ -17,7 +17,7 @@ def calculate_average_from_input():
         total += num # 合計を計算
 
     count = len(numbers) # 要素の数を取得 (Pythonのlen()関数を使用)
-    average = total / (count + 1) # 合計を要素数で割る
+    average = total / (count) # 合計を要素数で割る
     
     return average
 
